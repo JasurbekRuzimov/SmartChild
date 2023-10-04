@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete_all"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Hamma ma'lumotlarni o'chirish"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+
+</menu>

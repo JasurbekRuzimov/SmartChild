@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,NotSibling">
+
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
+                app:layout_constraintEnd_toStartOf="@+id/roundedImageView"
+                app:layout_constraintTop_toTopOf="@+id/roundedImageView"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/imagemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_menu"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/appName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/appName"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/logo_pr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_oval="true"
+                tools:ignore="ContentDescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="74dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_usti"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/Alifbe"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/input_rectangle_background"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:paddingBottom="15dp"
+                        android:weightSum="1"
+                        tools:ignore="MissingPrefix">
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/abcblock"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Alifbe"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Ertaklar"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/input_rectangle_background"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/castle"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:text="Ertaklar"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_usti1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
+                    tools:ignore="MissingConstraints">
+
+
+                    <LinearLayout
+                        android:id="@+id/InglizTili"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/input_rectangle_background"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/eng"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:text="Ingliz tili"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/TasviriySanat"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/input_rectangle_background"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:paddingBottom="15dp"
+                        android:weightSum="1"
+                        tools:ignore="MissingPrefix">
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/creativity"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Rasm chizish"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Oyinlar"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_rectangle_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout_usti1"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout_usti1"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti1"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/console" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="5dp"
+                        android:text="O'yinlar"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/umumiyBolalarSoni"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_rectangle_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/Oyinlar"
+                    app:layout_constraintStart_toStartOf="@+id/Oyinlar"
+                    app:layout_constraintTop_toBottomOf="@+id/Oyinlar"
+                    tools:ignore="DuplicateIds,MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/Chaqaloqlar333"
+                        android:layout_width="130dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/pupil"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Chaqaloqlar334"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="45dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="0.1"
+                            android:fontFamily="@font/montserrat"
+                            android:text=" Umumiy "
+                            android:textColor="@color/primary"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,InefficientWeight" />
+
+                        <TextView
+                            android:id="@+id/BolalarSoni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" 0 "
+                            android:textAlignment="center"
+                            android:textColor="@color/primary"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,InefficientWeight,TextViewEdits,UsingOnClickInXml" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/AholiQoshish"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_rectangle_background"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/umumiyBolalarSoni"
+                    app:layout_constraintStart_toStartOf="@+id/umumiyBolalarSoni"
+                    app:layout_constraintTop_toBottomOf="@+id/umumiyBolalarSoni">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="15dp"
+                        android:text="Yangi kelgan bolalarni ro'yxatdan o'tkazish"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/green"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/gray"
+        android:fitsSystemWindows="true"
+        android:paddingTop="20dp"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@color/primary"
+        app:itemTextColor="@color/primary"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_pr"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_pr"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartChild"
+        tools:targetApi="31">
+        <activity
+            android:name=".NavMenu.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Game.GameOver"
+            android:exported="false" />
+        <activity
+            android:name=".Game.StartGame_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Game.Oyinlar_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.Tasviriy_Sanat_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.Ingliz_Tili_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.Alifbe_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.Ertak_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn_Up.SignIn_Firebase_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SignIn_Up.SignUp_Firebase_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NavMenu.Support_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DataBase.Update_Activity"
+            android:parentActivityName=".Dashboard.Natijalar_Activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NavMenu.FAQ_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NavMenu.AboutUs_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NavMenu.Settings_activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Dashboard.Natijalar_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Dashboard.Demografik_Malumotlar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Dashboard.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash.Splash_Screen_activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+    </application>
+
+</manifest>

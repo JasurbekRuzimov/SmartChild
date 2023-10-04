@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/user_data_background"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/harfRasmImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:background="@drawable/user_data_background"
+        android:layout_gravity="center"
+        android:src="@drawable/mysql"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/harfInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Ma'lumotlar"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textSize="13dp"
+        android:textColor="@color/primary"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</LinearLayout>
