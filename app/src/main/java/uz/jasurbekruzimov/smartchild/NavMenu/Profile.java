@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,6 +21,7 @@ import com.makeramen.roundedimageview.RoundedImageView;
 
 import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
+import uz.jasurbekruzimov.smartchild.Splash.Splash_Screen_activity;
 
 
 public class Profile extends AppCompatActivity {
@@ -105,4 +107,8 @@ public class Profile extends AppCompatActivity {
         userImage = findViewById(R.id.userImage);
 
     }
+
+
+
+
 }

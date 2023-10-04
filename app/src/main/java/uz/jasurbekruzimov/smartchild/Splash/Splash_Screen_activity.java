@@ -23,16 +23,12 @@ public class Splash_Screen_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        // Foydalanuvchi kirishini tekshirish
         if (isUserLoggedIn()) {
-            // Foydalanuvchi kirish qilgan bo'lsa, asosiy sahifaga o'tish
             startActivity(new Intent(Splash_Screen_activity.this, MainActivity.class));
         } else {
-            // Foydalanuvchi kirish qilmagan bo'lsa, kirish oynasiga o'tish
             startActivity(new Intent(Splash_Screen_activity.this, SignIn_Firebase_Activity.class));
         }
 
-        // Aktivitini yopish
         finish();
 
 
