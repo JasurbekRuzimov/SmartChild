@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_share1:
                     Intent intent2 = new Intent(Intent.ACTION_SEND);
                     intent2.setType("text/plain");
-                    String shareBody = "https://play.google.com/store/apps/details?id=kindergarten.uz";
+                    String shareBody = "https://play.google.com/store/apps/details?id=SmartChild.uz";
                     String shareSub = "Kindergarten";
                     intent2.putExtra(Intent.EXTRA_SUBJECT, shareSub);
                     intent2.putExtra(Intent.EXTRA_TEXT, shareBody);
