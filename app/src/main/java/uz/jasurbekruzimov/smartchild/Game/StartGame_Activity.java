@@ -70,26 +70,20 @@ public class StartGame_Activity extends AppCompatActivity {
         // Populate techList with all the technology names
         techList.add("Yashil");
         techList.add("Qizil");
-        techList.add("Sariq");
         techList.add("Moviy");
-        techList.add("Siyohrang");
         techList.add("Qora");
         techList.add("To'q Moviy");
-        techList.add("Pushti");
         techList.add("Jigarrang");
         techList.add("Kulrang");
 
         // Put all the technology names with technology image resource ids in map.
         map.put(techList.get(0), R.drawable.green);
         map.put(techList.get(1), R.drawable.red);
-        map.put(techList.get(2), R.drawable.yellow);
-        map.put(techList.get(3), R.drawable.blue);
-        map.put(techList.get(4), R.drawable.purple);
-        map.put(techList.get(5), R.drawable.black);
-        map.put(techList.get(6), R.drawable.darkblue);
-        map.put(techList.get(7), R.drawable.pink);
-        map.put(techList.get(8), R.drawable.brown);
-        map.put(techList.get(9), R.drawable.gray);
+        map.put(techList.get(2), R.drawable.blue);
+        map.put(techList.get(3), R.drawable.black);
+        map.put(techList.get(4), R.drawable.darkblue);
+        map.put(techList.get(5), R.drawable.brown);
+        map.put(techList.get(6), R.drawable.gray);
         // Shuffle techList so that each time we open the app it starts with
         // a random question
         Collections.shuffle(techList);
