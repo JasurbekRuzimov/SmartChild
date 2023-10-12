@@ -4,17 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import uz.jasurbekruzimov.smartchild.R;
 
 
 public class Oyinlar_Activity extends AppCompatActivity {
 
+    LinearLayout backHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oyinlar);
+
+        backHome = findViewById(R.id.backHomeGame);
+
+        backHome.setOnClickListener(v -> finish());
+
 
     }
 
