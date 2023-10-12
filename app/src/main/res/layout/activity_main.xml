@@ -466,8 +466,7 @@
                         app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
 
                 </LinearLayout>
-
-            </LinearLayout>
+          </LinearLayout>
 
         </ScrollView>
 
