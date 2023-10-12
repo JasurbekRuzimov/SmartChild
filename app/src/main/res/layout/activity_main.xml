@@ -20,7 +20,7 @@
             android:background="@color/primary"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints,NotSibling">
@@ -30,16 +30,16 @@
                 android:id="@+id/appName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="24dp"
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="@string/app_name"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
-                app:layout_constraintEnd_toStartOf="@+id/roundedImageView"
-                app:layout_constraintTop_toTopOf="@+id/roundedImageView"
+                app:layout_constraintBottom_toBottomOf="@+id/profile"
+                app:layout_constraintEnd_toStartOf="@+id/profile"
+                app:layout_constraintTop_toTopOf="@+id/profile"
                 tools:ignore="HardcodedText,UnusedAttribute" />
 
             <ImageView
@@ -56,21 +56,17 @@
                 app:layout_constraintTop_toTopOf="@+id/appName"
                 tools:ignore="ContentDescription,UseAppTint" />
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/roundedImageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="16dp"
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:src="@drawable/logo_pr"
+                android:tint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:riv_oval="true"
-                tools:ignore="ContentDescription" />
+                app:srcCompat="@drawable/ic_baseline_person_24"
+                tools:ignore="UseAppTint" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -147,6 +143,93 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/InglizTili"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/input_rectangle_background"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:weightSum="1">
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/eng"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:text="Ingliz tili"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_usti1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
+                    tools:ignore="MissingConstraints">
+
+
+                    <LinearLayout
+                        android:id="@+id/TasviriySanat"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/input_rectangle_background"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:paddingBottom="15dp"
+                        android:weightSum="1"
+                        tools:ignore="MissingPrefix">
+
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.8"
+                            android:src="@drawable/creativity"
+                            tools:ignore="ContentDescription,InefficientWeight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Rasm chizish"
+                            android:textColor="@color/primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:id="@+id/Ertaklar"
                         android:layout_width="150dp"
                         android:layout_height="160dp"
@@ -184,7 +267,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linearLayout_usti1"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_marginTop="1dp"
@@ -199,7 +281,7 @@
 
 
                     <LinearLayout
-                        android:id="@+id/InglizTili"
+                        android:id="@+id/shakllar"
                         android:layout_width="150dp"
                         android:layout_height="160dp"
                         android:layout_margin="7dp"
@@ -214,7 +296,7 @@
                             android:layout_height="110dp"
                             android:layout_gravity="center"
                             android:layout_weight="0.8"
-                            android:src="@drawable/eng"
+                            android:src="@drawable/shapes"
                             tools:ignore="ContentDescription,InefficientWeight" />
 
                         <TextView
@@ -224,7 +306,7 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/montserrat"
                             android:gravity="center"
-                            android:text="Ingliz tili"
+                            android:text="Shakllar"
                             android:textColor="@color/primary"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -233,7 +315,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/TasviriySanat"
+                        android:id="@+id/ranglar"
                         android:layout_width="150dp"
                         android:layout_height="160dp"
                         android:layout_margin="7dp"
@@ -250,7 +332,7 @@
                             android:layout_height="110dp"
                             android:layout_gravity="center"
                             android:layout_weight="0.8"
-                            android:src="@drawable/creativity"
+                            android:src="@drawable/colorpalette"
                             tools:ignore="ContentDescription,InefficientWeight" />
 
                         <TextView
@@ -259,7 +341,7 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/montserrat"
-                            android:text="Rasm chizish"
+                            android:text="Ranglar"
                             android:textColor="@color/primary"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -271,40 +353,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/Oyinlar"
-                    android:layout_width="320dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="@+id/linearLayout_usti1"
-                    app:layout_constraintStart_toStartOf="@+id/linearLayout_usti1"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti1"
-                    tools:ignore="MissingConstraints">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/console" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:fontFamily="@font/montserrat"
-                        android:padding="5dp"
-                        android:text="O'yinlar"
-                        android:textAlignment="center"
-                        android:textColor="@color/primary"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText" />
-
-                </LinearLayout>
-
-                <LinearLayout
                     android:id="@+id/umumiyBolalarSoni"
                     android:layout_width="320dp"
                     android:layout_height="100dp"
@@ -312,9 +360,6 @@
                     android:background="@drawable/input_rectangle_background"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="@+id/Oyinlar"
-                    app:layout_constraintStart_toStartOf="@+id/Oyinlar"
-                    app:layout_constraintTop_toBottomOf="@+id/Oyinlar"
                     tools:ignore="DuplicateIds,MissingConstraints">
 
                     <LinearLayout
@@ -389,10 +434,7 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/input_rectangle_background"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="@+id/umumiyBolalarSoni"
-                    app:layout_constraintStart_toStartOf="@+id/umumiyBolalarSoni"
-                    app:layout_constraintTop_toBottomOf="@+id/umumiyBolalarSoni">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textView8"

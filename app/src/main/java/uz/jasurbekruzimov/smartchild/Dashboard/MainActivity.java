@@ -39,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout alifbe;
     LinearLayout inglizTili;
     LinearLayout tasviriySanat;
-    LinearLayout oyinlar;
+    LinearLayout shakllar;
+    LinearLayout ranglar;
     LinearLayout umumiyBolalarSoni;
     LinearLayout aholiQoshish;
     TextView BolalarSoni;
+    ImageView profile;
 
 
     @SuppressLint({"MissingInflatedId", "NonConstantResourceId", "SetTextI18n"})
@@ -59,11 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
         inglizTili = findViewById(R.id.InglizTili);
         tasviriySanat = findViewById(R.id.TasviriySanat);
-        oyinlar = findViewById(R.id.Oyinlar);
+        ranglar = findViewById(R.id.ranglar);
+        shakllar = findViewById(R.id.shakllar);
         umumiyBolalarSoni = findViewById(R.id.umumiyBolalarSoni);
         aholiQoshish = findViewById(R.id.AholiQoshish);
         BolalarSoni = findViewById(R.id.BolalarSoni);
-
+        profile = findViewById(R.id.profile);
 
         DrawerLayout drawerLayout = findViewById(R.id.drawerLayout);
         navMenu = findViewById(R.id.imagemenu);
@@ -106,7 +109,10 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
 
-
+        profile.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Profile.class);
+            startActivity(intent);
+        });
 
         ertaklar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Ertak_Activity.class);
@@ -128,7 +134,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        oyinlar.setOnClickListener(v -> {
+        ranglar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Oyinlar_Activity.class);
+            startActivity(intent);
+        });
+
+        shakllar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Oyinlar_Activity.class);
             startActivity(intent);
         });
@@ -170,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
             new Handler().postDelayed(() -> isBackPressed = false, 2000);
         }
     }
+
     public static class Counter {
         private int counter;
         private TextView textView;
