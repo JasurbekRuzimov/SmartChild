@@ -31,8 +31,7 @@ import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
 public class MainActivity extends AppCompatActivity {
     public boolean isBackPressed = false;
 
-    FloatingActionButton floatingActionButton;
-    Natijalar_Activity natijalarActivity = new Natijalar_Activity();
+
     ImageView navMenu;
     TextView KinderGardenName;
     LinearLayout ertaklar;
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout shakllar;
     LinearLayout ranglar;
     LinearLayout umumiyBolalarSoni;
-    LinearLayout aholiQoshish;
     TextView BolalarSoni;
     ImageView profile;
 
@@ -54,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         KinderGardenName = findViewById(R.id.appName);
-        floatingActionButton = findViewById(R.id.floatingActionButton2);
 
         ertaklar = findViewById(R.id.Ertaklar);
         alifbe = findViewById(R.id.Alifbe);
@@ -64,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
         ranglar = findViewById(R.id.ranglar);
         shakllar = findViewById(R.id.shakllar);
         umumiyBolalarSoni = findViewById(R.id.umumiyBolalarSoni);
-        aholiQoshish = findViewById(R.id.AholiQoshish);
         BolalarSoni = findViewById(R.id.BolalarSoni);
         profile = findViewById(R.id.profile);
 
@@ -146,16 +142,6 @@ public class MainActivity extends AppCompatActivity {
 
         umumiyBolalarSoni.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Natijalar_Activity.class);
-            startActivity(intent);
-        });
-
-        aholiQoshish.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Demografik_Malumotlar.class);
-            startActivity(intent);
-        });
-
-        floatingActionButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Demografik_Malumotlar.class);
             startActivity(intent);
         });
 

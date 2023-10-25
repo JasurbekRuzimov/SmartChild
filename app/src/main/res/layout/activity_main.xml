@@ -428,44 +428,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/AholiQoshish"
-                    android:layout_width="320dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/montserrat"
-                        android:padding="15dp"
-                        android:text="Yangi kelgan bolalarni ro'yxatdan o'tkazish"
-                        android:textColor="@color/primary"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText" />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/floatingActionButton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/green"
-                        android:clickable="true"
-                        android:contentDescription="@string/todo"
-                        android:focusable="true"
-                        app:srcCompat="@drawable/baseline_person_add_alt_1_24" />
-
-                </LinearLayout>
             </LinearLayout>
 
         </ScrollView>
