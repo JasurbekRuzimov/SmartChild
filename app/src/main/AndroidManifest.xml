@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SmartChild"
         tools:targetApi="31">
         <activity
+            android:name=".VideoTutorials.TestVideo"
+            android:exported="false" />
+        <activity
             android:name=".Splash.Splash1"
             android:exported="true">
             <intent-filter>
@@ -115,9 +118,7 @@
             android:exported="true" />
         <activity
             android:name=".Splash.Splash_Screen_activity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
