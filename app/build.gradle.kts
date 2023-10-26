@@ -49,19 +49,28 @@ dependencies {
     implementation("com.makeramen:roundedimageview:2.3.0")
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
-    implementation("com.google.firebase:firebase-analytics-ktx:21.3.0")
+    implementation("com.google.firebase:firebase-analytics-ktx:21.4.0")
     implementation("com.google.firebase:firebase-storage:20.3.0")
-    implementation("com.google.firebase:firebase-auth:22.1.2")
-    implementation("com.google.firebase:firebase-firestore:24.8.1")
+    implementation("com.google.firebase:firebase-auth:22.2.0")
+    implementation("com.google.firebase:firebase-firestore:24.9.0")
     implementation("com.google.firebase:firebase-database:20.3.0")
 
-    implementation("com.google.android.exoplayer: exoplayer: 2.10.8")
-    implementation("com.google. android.exoplayer: excplayer-core:2.10.8")
-    implementation("com.google. android.exoplayer: excplayer-dash:2.10.8")
-    implementation("com.google. android.exoplayer: excplayer-hls: 2.10.8")
-    implementation("com.google. android. exoplayer : exoplayer-smoothstreaning:2.10.8")
-    implementation("com.google.android.exoplayer: excplayer-ui: 2.10.8")
+    implementation("com.google.android.exoplayer:exoplayer-hls:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer-dash:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer-core:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer-ui:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
+    implementation("com.google.android.exoplayer:exoplayer-smoothstreaming:2.19.1")
 
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
+    implementation("com.github.eddydn:videoplayer:1.10")
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
+
+    implementation("com.jakewharton:butterknife:10.2.3")
+    annotationProcessor("com.jakewharton:butterknife-compiler:10.2.3")
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
 
 
 }
