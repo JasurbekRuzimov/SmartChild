@@ -63,50 +63,44 @@ public class TestVideo extends AppCompatActivity implements IVideoLoadListener {
         videoPlayerRecyclerView.addItemDecoration(decorator);
 
         loadVideoFromFirebase();
-
-
     }
 
     private void loadVideoFromFirebase() {
-
         shimmerFrameLayout.startShimmer();
         ArrayList<MediaObject> videoList = new ArrayList<>();
 
-        new Handler().postDelayed(() -> {
-
-            FirebaseDatabase.getInstance()
-                    .getReference("Video")
-                    .addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.exists()) {
-                                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                                    VideoData videoData = dataSnapshot.getValue(VideoData.class);
+        FirebaseDatabase.getInstance()
+                .getReference("Video")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()) {
+                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                VideoData videoData = dataSnapshot.getValue(VideoData.class);
+                                if (videoData != null) {
                                     MediaObject mediaObject = new MediaObject(
                                             videoData.getName(),
                                             videoData.getMediaurl(),
                                             videoData.getThumbnail(),
                                             "");
-
+                                    videoList.add(mediaObject);
                                 }
-                                listener.onVideoLoadSuccess(videoList);
-                            } else {
-                                listener.onVideoLoadFailed("Video topilmadi");
                             }
+                            listener.onVideoLoadSuccess(videoList);
+                        } else {
+                            listener.onVideoLoadFailed("Video topilmadi");
                         }
+                    }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-                            listener.onVideoLoadFailed(error.getMessage());
-                        }
-                    });
-
-        }, 2000);
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        listener.onVideoLoadFailed(error.getMessage());
+                    }
+                });
     }
 
     @Override
     public void onVideoLoadSuccess(ArrayList<MediaObject> videoList) {
-
         videoPlayerRecyclerView.setMediaObjects(videoList);
         VideoPlayerRecyclerAdapter adapter = new VideoPlayerRecyclerAdapter(videoList, initGlide());
         videoPlayerRecyclerView.setAdapter(adapter);
@@ -127,6 +121,6 @@ public class TestVideo extends AppCompatActivity implements IVideoLoadListener {
     public void onVideoLoadFailed(String message) {
         shimmerFrameLayout.stopShimmer();
         shimmerFrameLayout.setVisibility(View.GONE);
-        Toast.makeText(this, message, Toast.LENGTH_SHORT);
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
