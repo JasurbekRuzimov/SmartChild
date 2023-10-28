@@ -41,6 +41,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.navigation:navigation-fragment:2.7.3")
+    implementation("androidx.navigation:navigation-ui:2.7.3")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -66,8 +68,8 @@ dependencies {
     implementation("com.github.eddydn:videoplayer:1.10")
     implementation("com.facebook.shimmer:shimmer:0.5.0")
 
-    implementation("com.jakewharton:butterknife:10.2.3")
-    annotationProcessor("com.jakewharton:butterknife-compiler:10.2.3")
+//    implementation("com.jakewharton:butterknife:10.2.3")
+//    annotationProcessor("com.jakewharton:butterknife-compiler:10.2.3")
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")

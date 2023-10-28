@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SmartChild"
         tools:targetApi="31">
         <activity
+            android:name=".Shapes"
+            android:exported="false" />
+        <activity
             android:name=".VideoTutorials.TestVideo"
             android:exported="false" />
         <activity
@@ -118,7 +121,7 @@
             android:exported="true" />
         <activity
             android:name=".Splash.Splash_Screen_activity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
