@@ -21,8 +21,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import edmt.dev.videoplayer.VideoPlayerRecyclerView;
 import edmt.dev.videoplayer.adapter.VideoPlayerRecyclerAdapter;
 import edmt.dev.videoplayer.model.MediaObject;
@@ -30,32 +28,28 @@ import edmt.dev.videoplayer.utils.VerticalSpacingItemDecorator;
 import uz.jasurbekruzimov.smartchild.DataBase.VideoData;
 import uz.jasurbekruzimov.smartchild.Interface.IVideoLoadListener;
 import uz.jasurbekruzimov.smartchild.R;
+import uz.jasurbekruzimov.smartchild.databinding.ActivityTestVideoBinding;
 
-public class TestVideo extends AppCompatActivity implements IVideoLoadListener {
+public class TestVideo extends AppCompatActivity {
+    private ActivityTestVideoBinding binding;
 
-    @SuppressLint("NonConstantResourceId")
-    @BindView(R.id.shimmerVideoLayout)
+
+//    @SuppressLint("NonConstantResourceId")
+//    @BindView(R.id.shimmerVideoLayout
     ShimmerFrameLayout shimmerFrameLayout;
 
-    @SuppressLint("NonConstantResourceId")
-    @BindView(R.id.videoPlayer)
+//    @SuppressLint("NonConstantResourceId")
+//    @BindView(R.id.videoPlayer)
     VideoPlayerRecyclerView videoPlayerRecyclerView;
 
     IVideoLoadListener listener;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_video);
+        binding = ActivityTestVideoBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        init();
-
-    }
-
-    public void init() {
-        ButterKnife.bind(this);
-
-        listener = this;
+        listener = (IVideoLoadListener) this;
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         videoPlayerRecyclerView.setLayoutManager(layoutManager);
@@ -64,6 +58,12 @@ public class TestVideo extends AppCompatActivity implements IVideoLoadListener {
 
         loadVideoFromFirebase();
     }
+
+//    public void init() {
+//        ButterKnife.bind(this);
+//
+//
+//    }
 
     private void loadVideoFromFirebase() {
         shimmerFrameLayout.startShimmer();
@@ -99,7 +99,7 @@ public class TestVideo extends AppCompatActivity implements IVideoLoadListener {
                 });
     }
 
-    @Override
+
     public void onVideoLoadSuccess(ArrayList<MediaObject> videoList) {
         videoPlayerRecyclerView.setMediaObjects(videoList);
         VideoPlayerRecyclerAdapter adapter = new VideoPlayerRecyclerAdapter(videoList, initGlide());
@@ -117,7 +117,6 @@ public class TestVideo extends AppCompatActivity implements IVideoLoadListener {
     }
 
     @SuppressLint("ShowToast")
-    @Override
     public void onVideoLoadFailed(String message) {
         shimmerFrameLayout.stopShimmer();
         shimmerFrameLayout.setVisibility(View.GONE);
