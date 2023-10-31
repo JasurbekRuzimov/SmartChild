@@ -15,7 +15,8 @@
         android:theme="@style/Theme.SmartChild"
         tools:targetApi="31">
         <activity
-            android:name=".Shapes"
+            android:screenOrientation="landscape"
+            android:name=".ShapesGame.Shapes"
             android:exported="false" />
         <activity
             android:name=".VideoTutorials.TestVideo"
