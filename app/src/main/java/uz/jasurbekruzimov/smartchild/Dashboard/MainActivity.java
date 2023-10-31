@@ -25,6 +25,7 @@ import uz.jasurbekruzimov.smartchild.NavMenu.Profile;
 import uz.jasurbekruzimov.smartchild.NavMenu.Settings_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.Support_Activity;
 import uz.jasurbekruzimov.smartchild.R;
+import uz.jasurbekruzimov.smartchild.ShapesGame.Shapes;
 import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
 import uz.jasurbekruzimov.smartchild.VideoTutorials.TestVideo;
 
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         shakllar.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TestVideo.class);
+            Intent intent = new Intent(MainActivity.this, Shapes.class);
             startActivity(intent);
         });
 
