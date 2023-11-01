@@ -85,6 +85,8 @@
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="ScrollViewCount">
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -107,74 +109,86 @@
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
                     tools:ignore="MissingConstraints">
 
-                    <LinearLayout
-                        android:id="@+id/Alifbe"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/input_rectangle_background"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:paddingBottom="15dp"
-                        android:weightSum="1"
-                        tools:ignore="MissingPrefix">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/Alifbe"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            tools:ignore="MissingPrefix">
 
 
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/abcblock"
-                            tools:ignore="ContentDescription,InefficientWeight" />
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/abcblock"
+                                tools:ignore="ContentDescription,InefficientWeight" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="Alifbe"
-                            android:textColor="@color/primary"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Alifbe"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
 
-                    </LinearLayout>
+                        </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/InglizTili"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/input_rectangle_background"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:weightSum="1">
+                    </androidx.cardview.widget.CardView>
 
 
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/eng"
-                            tools:ignore="ContentDescription,InefficientWeight" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/montserrat"
-                            android:gravity="center"
-                            android:text="Ingliz tili"
-                            android:textColor="@color/primary"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                        <LinearLayout
+                            android:id="@+id/InglizTili"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
 
-                    </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/eng"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="Ingliz tili"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
 
 
                 </LinearLayout>
@@ -193,75 +207,85 @@
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
                     tools:ignore="MissingConstraints">
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
 
-                    <LinearLayout
-                        android:id="@+id/TasviriySanat"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/input_rectangle_background"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:paddingBottom="15dp"
-                        android:weightSum="1"
-                        tools:ignore="MissingPrefix">
-
-
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/creativity"
-                            tools:ignore="ContentDescription,InefficientWeight" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="Rasm chizish"
-                            android:textColor="@color/primary"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/Ertaklar"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/input_rectangle_background"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:weightSum="1">
+                        <LinearLayout
+                            android:id="@+id/TasviriySanat"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            tools:ignore="MissingPrefix">
 
 
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/castle"
-                            tools:ignore="ContentDescription,InefficientWeight" />
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/creativity"
+                                tools:ignore="ContentDescription,InefficientWeight" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/montserrat"
-                            android:gravity="center"
-                            android:text="Ertaklar"
-                            android:textColor="@color/primary"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Rasm chizish"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
 
-                    </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/Ertaklar"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/castle"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="Ertaklar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
 
 
                 </LinearLayout>
@@ -279,154 +303,171 @@
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
                     tools:ignore="MissingConstraints">
 
-
-                    <LinearLayout
-                        android:id="@+id/shakllar"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/input_rectangle_background"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:weightSum="1">
-
-
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/shapes"
-                            tools:ignore="ContentDescription,InefficientWeight" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/montserrat"
-                            android:gravity="center"
-                            android:text="Shakllar"
-                            android:textColor="@color/primary"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ranglar"
-                        android:layout_width="150dp"
-                        android:layout_height="160dp"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/input_rectangle_background"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:paddingBottom="15dp"
-                        android:weightSum="1"
-                        tools:ignore="MissingPrefix">
-
-
-                        <ImageView
-                            android:layout_width="130dp"
-                            android:layout_height="110dp"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/colorpalette"
-                            tools:ignore="ContentDescription,InefficientWeight" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/montserrat"
-                            android:text="Ranglar"
-                            android:textColor="@color/primary"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/umumiyBolalarSoni"
-                    android:layout_width="320dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    tools:ignore="DuplicateIds,MissingConstraints">
-
-                    <LinearLayout
-                        android:id="@+id/Chaqaloqlar333"
-                        android:layout_width="130dp"
-                        android:layout_height="90dp"
-                        android:layout_margin="5dp"
-                        android:background="@color/white"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        android:weightSum="1">
-
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_weight="0.8"
-                            android:src="@drawable/pupil"
-                            tools:ignore="ContentDescription,InefficientWeight" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/Chaqaloqlar334"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
-                        android:layout_marginStart="45dp"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="10dp"
-                        android:weightSum="1">
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
 
-                        <TextView
+                        <LinearLayout
+                            android:id="@+id/shakllar"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/shapes"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="Shakllar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/ranglar"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            tools:ignore="MissingPrefix">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/colorpalette"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Ranglar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/umumiyBolalarSoni"
+                        android:layout_width="320dp"
+                        android:layout_height="100dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        tools:ignore="DuplicateIds,MissingConstraints">
+
+                        <LinearLayout
+                            android:id="@+id/Chaqaloqlar333"
+                            android:layout_width="130dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            android:weightSum="1">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/pupil"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Chaqaloqlar334"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="5dp"
-                            android:layout_weight="0.1"
-                            android:fontFamily="@font/montserrat"
-                            android:text=" Umumiy "
-                            android:textColor="@color/primary"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText,InefficientWeight" />
-
-                        <TextView
-                            android:id="@+id/BolalarSoni"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
-                            android:layout_gravity="center"
-                            android:fontFamily="@font/montserrat"
+                            android:layout_margin="5dp"
+                            android:layout_marginStart="45dp"
                             android:gravity="center"
-                            android:padding="5dp"
-                            android:text=" 0 "
-                            android:textAlignment="center"
-                            android:textColor="@color/primary"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText,InefficientWeight,TextViewEdits,UsingOnClickInXml" />
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="0.1"
+                                android:fontFamily="@font/montserrat"
+                                android:text=" Umumiy "
+                                android:textColor="@color/primary"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText,InefficientWeight" />
+
+                            <TextView
+                                android:id="@+id/BolalarSoni"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text=" 0 "
+                                android:textAlignment="center"
+                                android:textColor="@color/primary"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText,InefficientWeight,TextViewEdits,UsingOnClickInXml" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
 
             </LinearLayout>
 
