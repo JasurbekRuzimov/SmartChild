@@ -79,4 +79,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="start">Start</string>
+    <string name="accountdan_chiqib_ketmoqchimisiz">Accountdan chiqib ketmoqchimisiz?</string>
+    <string name="chiqish_amalga_oshmoqda">Chiqish amalga oshmoqda...</string>
+    <string name="siz_avtorizatsiyadan_o_tmadingiz">Siz avtorizatsiyadan o\'tmadingiz</string>
 </resources>
