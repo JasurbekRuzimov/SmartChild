@@ -100,8 +100,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="5dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -147,89 +147,85 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:filterTouchesWhenObscured="true"
-                    android:focusableInTouchMode="true"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallA"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    android:touchscreenBlocksFocus="true"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/a" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/a"
+                        tools:ignore="ContentDescription" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallB"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/b" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/b"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallC"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf,UsingOnClickInXml">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/c" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/c"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallD"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/d" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/d"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -244,85 +240,85 @@
                 android:orientation="horizontal">
 
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallE"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/e" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/e"
+                        tools:ignore="ContentDescription" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallF"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/f" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/f"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallG"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/g" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/g"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallH"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/h" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/h"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -337,85 +333,85 @@
                 android:orientation="horizontal">
 
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallI"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/i" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/i"
+                        tools:ignore="ContentDescription" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallJ"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/j" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/j"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallK"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/k" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/k"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallL"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/l" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/l"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -430,84 +426,85 @@
                 android:orientation="horizontal">
 
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallM"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/m" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/m"
+                        tools:ignore="ContentDescription" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallN"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/n" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/n"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallO"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="52dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/o" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/o"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallP"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/p" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/p"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
             </LinearLayout>
@@ -523,84 +520,85 @@
                 android:orientation="horizontal">
 
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallQ"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/q" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/q"
+                        tools:ignore="ContentDescription" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallR"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/r" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/r"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallS"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/s" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/s"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallT"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/t" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/t"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
             </LinearLayout>
@@ -616,85 +614,85 @@
                 android:orientation="horizontal">
 
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallU"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/u" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/u"
+                        tools:ignore="ContentDescription" />
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallV"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/v" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/v"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallW"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/w" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/w"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallX"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/x" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/x"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -709,46 +707,44 @@
                 android:orientation="horizontal">
 
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallY"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/y" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/y"
+                        tools:ignore="ContentDescription" />
 
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:onClick="CallZ"
-                    android:orientation="horizontal"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/z" />
+                        android:layout_margin="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/z"
+                        tools:ignore="ContentDescription" />
 
-
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
