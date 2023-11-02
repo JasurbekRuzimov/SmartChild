@@ -11,10 +11,8 @@ import uz.jasurbekruzimov.smartchild.R;
 
 public class HarfInfoDialog extends Dialog {
 
-    private ImageView harfRasmImageView;
-    private TextView harfInfoTextView;
-    private int harfImageResource;
-    private String harfInfoText;
+    private final int harfImageResource;
+    private final String harfInfoText;
 
     public HarfInfoDialog(Context context, int harfImageResource, String harfInfoText) {
         super(context);
@@ -27,8 +25,8 @@ public class HarfInfoDialog extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_harf);
 
-        harfRasmImageView = findViewById(R.id.harfRasmImageView);
-        harfInfoTextView = findViewById(R.id.harfInfoTextView);
+        ImageView harfRasmImageView = findViewById(R.id.harfRasmImageView);
+        TextView harfInfoTextView = findViewById(R.id.harfInfoTextView);
 
         harfRasmImageView.setImageResource(harfImageResource);
         harfInfoTextView.setText(harfInfoText);
