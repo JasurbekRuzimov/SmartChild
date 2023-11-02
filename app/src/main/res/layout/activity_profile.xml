@@ -100,19 +100,29 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.makeramen.roundedimageview.RoundedImageView
+    <androidx.cardview.widget.CardView
+        style="@style/Widget.Material3.CardView.Elevated"
         android:id="@+id/userImage"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/rectangle_background"
-        android:padding="5dp"
-        android:src="@drawable/businessman"
+        app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="5dp"
+            android:src="@drawable/businessman"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView2"
@@ -149,7 +159,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
-
 
     <TextView
         android:id="@+id/userPassword"
@@ -189,6 +198,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="HardcodedText,SpUsage" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
