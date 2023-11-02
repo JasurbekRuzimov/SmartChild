@@ -2,21 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/mainLayout">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
         app:cardCornerRadius="10dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
         app:cardElevation="5dp"
-        app:cardUseCompatPadding="true"
-        >
+        app:cardUseCompatPadding="true">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -40,7 +39,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="HardcodedText" />
-
 
             <TextView
                 android:id="@+id/loginName_txt"
@@ -70,47 +68,6 @@
                 app:layout_constraintStart_toEndOf="@+id/loginName_txt"
                 app:layout_constraintTop_toTopOf="@+id/loginName_txt"
                 tools:ignore="HardcodedText" />
-
-            <!--            <TextView-->
-            <!--                android:id="@+id/manzil_txt"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginTop="12dp"-->
-            <!--                android:fontFamily="@font/montserrat"-->
-            <!--                android:text="Kamolot"-->
-            <!--                android:textColor="@color/yellow"-->
-            <!--                android:textSize="15sp"-->
-            <!--                android:textStyle="bold"-->
-            <!--                app:layout_constraintStart_toStartOf="@+id/loginName_txt"-->
-            <!--                app:layout_constraintTop_toBottomOf="@+id/loginName_txt"-->
-            <!--                tools:ignore="HardcodedText" />-->
-
-            <!--            <TextView-->
-            <!--                android:id="@+id/jinsi_txt"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:fontFamily="@font/montserrat"-->
-            <!--                android:text="Erkak"-->
-            <!--                android:textColor="@color/blue"-->
-            <!--                android:textSize="15sp"-->
-            <!--                android:textStyle="bold"-->
-            <!--                app:layout_constraintEnd_toEndOf="@+id/tugilganVaqti_txt"-->
-            <!--                app:layout_constraintTop_toTopOf="@+id/manzil_txt"-->
-            <!--                tools:ignore="HardcodedText" />-->
-
-            <!--            <TextView-->
-            <!--                android:id="@+id/tugilganVaqti_txt"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginEnd="4dp"-->
-            <!--                android:fontFamily="@font/montserrat"-->
-            <!--                android:text="20.06.2001"-->
-            <!--                android:textColor="@color/red"-->
-            <!--                android:textSize="15sp"-->
-            <!--                android:textStyle="bold"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintTop_toTopOf="@+id/sharifi_txt"-->
-            <!--                tools:ignore="HardcodedText" />-->
 
             <ImageView
                 android:id="@+id/deleteData"
