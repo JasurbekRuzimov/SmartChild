@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,21 +33,11 @@ import uz.jasurbekruzimov.smartchild.VideoTutorials.TestVideo;
 
 
 public class MainActivity extends AppCompatActivity {
+    ImageView navMenu, profile;
+    TextView KinderGardenName, BolalarSoni;
+    LinearLayout ertaklar,alifbe,inglizTili,tasviriySanat,shakllar,ranglar,umumiyBolalarSoni;
+    private boolean isMenuOpen = false;
     public boolean isBackPressed = false;
-
-
-    ImageView navMenu;
-    TextView KinderGardenName;
-    LinearLayout ertaklar;
-    LinearLayout alifbe;
-    LinearLayout inglizTili;
-    LinearLayout tasviriySanat;
-    LinearLayout shakllar;
-    LinearLayout ranglar;
-    LinearLayout umumiyBolalarSoni;
-    TextView BolalarSoni;
-    ImageView profile;
-
 
     @SuppressLint({"MissingInflatedId", "NonConstantResourceId", "SetTextI18n"})
     @Override
@@ -57,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
         ertaklar = findViewById(R.id.Ertaklar);
         alifbe = findViewById(R.id.Alifbe);
-
         inglizTili = findViewById(R.id.InglizTili);
         tasviriySanat = findViewById(R.id.TasviriySanat);
         ranglar = findViewById(R.id.ranglar);
@@ -69,10 +60,21 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawerLayout = findViewById(R.id.drawerLayout);
         navMenu = findViewById(R.id.imagemenu);
         navMenu.setOnClickListener(v -> {
+            Animation animation;
+            if (isMenuOpen) {
+                animation = new RotateAnimation(180, 0, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+            } else {
+                animation = new RotateAnimation(0, 180, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+            }
+            animation.setDuration(300);
+            animation.setFillAfter(true);
+            navMenu.startAnimation(animation);
             drawerLayout.openDrawer(GravityCompat.START);
+            isMenuOpen = !isMenuOpen;
         });
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(item -> {
+            item.setChecked(true);
             switch (item.getItemId()) {
                 case R.id.nav_profile:
                     Intent intent = new Intent(MainActivity.this, Profile.class);
