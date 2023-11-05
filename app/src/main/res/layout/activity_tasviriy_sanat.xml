@@ -113,7 +113,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
                     android:orientation="horizontal"
                     tools:ignore="UseCompoundDrawables">
 
@@ -146,19 +145,19 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
                     android:orientation="vertical"
                     android:padding="5dp"
                     tools:ignore="UseCompoundDrawables">
@@ -166,9 +165,6 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="6dp"
                         android:src="@drawable/moshina"
                         tools:ignore="ContentDescription" />
@@ -184,6 +180,8 @@
                         android:text="Moshina rasmini chizish va bo'yash"
                         android:textColor="@color/primary"
                         android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -194,28 +192,25 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
                     android:orientation="vertical"
                     android:padding="5dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="6dp"
                         android:src="@drawable/traktor"
                         tools:ignore="ContentDescription" />
@@ -223,14 +218,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
                         android:layout_marginTop="1dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="16dp"
                         android:fontFamily="@font/montserrat"
                         android:text="Traktor rasmini chizish va bo'yash"
                         android:textColor="@color/primary"
                         android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -240,28 +235,26 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
                     android:orientation="vertical"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="6dp"
                         android:src="@drawable/kit"
                         tools:ignore="ContentDescription" />
@@ -278,6 +271,8 @@
                         android:textColor="@color/primary"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         tools:ignore="HardcodedText" />
 
 
@@ -286,28 +281,26 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
                     android:orientation="vertical"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="6dp"
                         android:src="@drawable/uy"
                         tools:ignore="ContentDescription" />
@@ -324,6 +317,8 @@
                         android:textColor="@color/primary"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         tools:ignore="HardcodedText" />
 
 
@@ -332,28 +327,25 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
                     android:orientation="vertical"
                     android:padding="5dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="6dp"
                         android:src="@drawable/nok"
                         tools:ignore="ContentDescription" />
@@ -370,6 +362,8 @@
                         android:textColor="@color/primary"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         tools:ignore="HardcodedText" />
 
 
@@ -382,25 +376,22 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="16dp"
                     android:orientation="vertical"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="6dp"
                         android:src="@drawable/qozichoq"
                         tools:ignore="ContentDescription" />
@@ -417,6 +408,8 @@
                         android:textColor="@color/primary"
                         android:textSize="17sp"
                         android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         tools:ignore="HardcodedText" />
 
 
