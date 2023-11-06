@@ -26,6 +26,8 @@ import uz.jasurbekruzimov.smartchild.NavMenu.FAQ_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.Profile;
 import uz.jasurbekruzimov.smartchild.NavMenu.Settings_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.Support_Activity;
+import uz.jasurbekruzimov.smartchild.Puzzle.MenuActivity;
+import uz.jasurbekruzimov.smartchild.Puzzle.SettingsActivity;
 import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.ShapesGame.Shapes;
 import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
@@ -125,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         inglizTili.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Ingliz_Tili_Activity.class);
+            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
             startActivity(intent);
         });
 
