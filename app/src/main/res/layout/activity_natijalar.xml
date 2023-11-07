@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/primary"
+        android:background="@color/green1"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,12 +30,11 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:fontFamily="@font/montserrat"
-            android:text="  Ro'yxatga olinganlar  "
+            android:text="Bolalar ro'yxati"
             android:textColor="@color/white"
             android:textSize="26sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintEnd_toStartOf="@+id/delete_all_data"
             app:layout_constraintStart_toEndOf="@+id/backHome"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText,MissingConstraints" />
@@ -82,15 +81,15 @@
             android:id="@+id/delete_all_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/ic_baseline_delete_24"
             android:tint="@color/white"
-            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/royxat"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ContentDescription,UseAppTint"
-            android:focusable="true" />
+            tools:ignore="ContentDescription,UseAppTint" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
