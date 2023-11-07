@@ -148,7 +148,6 @@
 
                     </androidx.cardview.widget.CardView>
 
-
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -157,7 +156,7 @@
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
-                            android:id="@+id/InglizTili"
+                            android:id="@+id/Ertaklar"
                             android:layout_width="150dp"
                             android:layout_height="160dp"
                             android:orientation="vertical"
@@ -169,7 +168,7 @@
                                 android:layout_height="110dp"
                                 android:layout_gravity="center"
                                 android:layout_weight="0.8"
-                                android:src="@drawable/eng"
+                                android:src="@drawable/castle"
                                 tools:ignore="ContentDescription,InefficientWeight" />
 
                             <TextView
@@ -179,7 +178,7 @@
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="Ingliz tili"
+                                android:text="Ertaklar"
                                 android:textColor="@color/primary"
                                 android:textSize="13sp"
                                 android:textStyle="bold"
@@ -188,7 +187,6 @@
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-
 
                 </LinearLayout>
 
@@ -253,7 +251,7 @@
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
-                            android:id="@+id/Ertaklar"
+                            android:id="@+id/InglizTili"
                             android:layout_width="150dp"
                             android:layout_height="160dp"
                             android:orientation="vertical"
@@ -265,7 +263,7 @@
                                 android:layout_height="110dp"
                                 android:layout_gravity="center"
                                 android:layout_weight="0.8"
-                                android:src="@drawable/castle"
+                                android:src="@drawable/puzzle_15"
                                 tools:ignore="ContentDescription,InefficientWeight" />
 
                             <TextView
@@ -275,7 +273,7 @@
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="@font/montserrat"
                                 android:gravity="center"
-                                android:text="Ertaklar"
+                                android:text="Puzzle 15"
                                 android:textColor="@color/primary"
                                 android:textSize="13sp"
                                 android:textStyle="bold"
@@ -284,7 +282,6 @@
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-
 
                 </LinearLayout>
 
