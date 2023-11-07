@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Dashboard.Ertak_Activity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/primary"
+        android:background="@color/green1"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -25,12 +26,12 @@
             android:id="@+id/nameErtak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="32dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
-            android:text="@string/app_name"
+            android:text="Ertaklar"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/roundedImageViewErtak"
             app:layout_constraintEnd_toStartOf="@+id/roundedImageViewErtak"
@@ -86,12 +87,12 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="74dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/gray"
-        android:paddingBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -102,183 +103,178 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginBottom="16dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text=" O'zbek Xalq Ertaklari"
-                    android:textColor="@color/primary"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
-
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:src="@drawable/book"
-                    tools:ignore="ContentDescription" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ertak1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
-                    android:id="@+id/ertak1"
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
                     android:filterTouchesWhenObscured="true"
                     android:focusableInTouchMode="true"
-                    android:orientation="vertical"
-                    android:padding="8dp"
+                    android:orientation="horizontal"
                     android:touchscreenBlocksFocus="true"
-                    tools:ignore="UselessLeaf">
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="98dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak1" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak1"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:id="@+id/ertak1Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="O'zbek Xalq Ertaklari"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ertak2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:id="@+id/ertak2"
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:touchscreenBlocksFocus="true"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak2" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak2"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="Odamtoy"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
-
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:id="@+id/ertak3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:touchscreenBlocksFocus="true"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak3" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak3"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
+                        android:id="@+id/ertak3Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="Oltin Tarvuz"
+                        android:text="Oltin tarvuz"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
-
 
                 </LinearLayout>
 
 
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:layout_margin="8dp"
-                        android:src="@drawable/ertak4" />
+                        android:src="@drawable/ertak4"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -289,106 +285,132 @@
                         android:gravity="center"
                         android:text="Dono Dehqon"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:touchscreenBlocksFocus="true"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak5" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak5"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="Muqbil toshotar"
-                        android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
-
                 </LinearLayout>
 
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:id="@+id/ertak6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:touchscreenBlocksFocus="true"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak6" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak6"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
+                        android:id="@+id/ertak6Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
                         android:text="Uchar gilam"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
-
 
                 </LinearLayout>
 
 
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:layout_margin="8dp"
-                        android:src="@drawable/ertak7" />
+                        android:src="@drawable/ertak7"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -397,87 +419,112 @@
                         android:layout_margin="8dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="Qarg'a bilan qo'zi"
+                        android:text="Qarg'a biln qo'zi"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:touchscreenBlocksFocus="true"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak8" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak8"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="1dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="1dp"
-                        android:layout_marginBottom="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="Jonivorlarning Sarguzashtlari"
-                        android:textColor="@color/primary"
-                        android:textSize="10sp"
+                        android:text="@string/jonivorlarning_sarguzashtlari"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="180dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/input_rectangle_background"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UselessLeaf">
+                    android:id="@+id/ertak9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:filterTouchesWhenObscured="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:touchscreenBlocksFocus="true"
+                    tools:ignore="UseCompoundDrawables,UselessLeaf,UselessParent">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="98dp"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:src="@drawable/ertak9" />
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ertak9"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
+                        android:id="@+id/ertak9Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_margin="8dp"
+                        android:layout_margin="20dp"
                         android:fontFamily="@font/montserrat"
                         android:gravity="center"
-                        android:text="Ur To'qmoq"
+                        android:text="Ur to'qmoq"
                         android:textColor="@color/primary"
-                        android:textSize="11sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
-
 
                 </LinearLayout>
 
 
-            </LinearLayout>
-
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
 
     </ScrollView>
 
@@ -485,39 +532,32 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/user_data_background"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/playingNameId"
-            android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:text="Ertak nomi ..."
-            android:textSize="14sp"
-            android:padding="1dp"
-            android:fontFamily="@font/montserrat"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textColor="@color/primary"
-            android:textStyle="bold"
-            />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/playingNameId"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="@string/ertak_nomi"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <SeekBar
                 android:id="@+id/seekBar"
@@ -531,24 +571,24 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <Button
-                android:id="@+id/toggleButton"
-                android:layout_width="60dp"
-                android:layout_height="28dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/user_data_background"
-                android:fontFamily="@font/montserrat"
-                android:onClick="toggleAudio"
-                android:padding="2dp"
-                android:text="play"
-                android:textSize="9sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:ignore="HardcodedText,SmallSp,UsingOnClickInXml" />
-
-
         </LinearLayout>
+
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/user_data_background"
+            android:fontFamily="@font/montserrat"
+            android:onClick="toggleAudio"
+            android:padding="2dp"
+            android:text="Play"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText,OnClick,SmallSp,UsingOnClickInXml" />
 
     </LinearLayout>
 

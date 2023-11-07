@@ -12,22 +12,21 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import uz.jasurbekruzimov.smartchild.R;
 
 public class Ertak_Activity extends AppCompatActivity {
 
     LinearLayout backHome;
-    LinearLayout ertak1;
-    LinearLayout ertak2;
+    CardView ertak1, ertak2;
     TextView playingNameId;
 
     MediaPlayer mediaPlayer;
-    Handler handler = new Handler();
     SeekBar seekBar;
     Button toggleButton;
     boolean isPlaying = false;
-
+    Handler handler = new Handler();
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
