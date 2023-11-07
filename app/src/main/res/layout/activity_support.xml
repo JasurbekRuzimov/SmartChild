@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/primary"
+        android:background="@color/green1"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -29,9 +29,9 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
-            android:text="@string/app_name"
+            android:text=" Support "
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
             app:layout_constraintEnd_toStartOf="@+id/roundedImageView"
@@ -105,28 +105,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/aboutUsText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/input_rectangle_background"
-                android:fontFamily="@font/montserrat"
-                android:gravity="center"
-                android:text="     Qo'llab quvvatlash markazi    "
-                android:textColor="@color/primary"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-                tools:ignore="HardcodedText,MissingConstraints" />
-
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
 
             <TextView
                 android:layout_width="wrap_content"
