@@ -104,18 +104,12 @@ public class Update_Activity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(ismi + " ni o'chirish");
         builder.setMessage(ismi + " haqidagi barcha ma'lumotlarni o'chirmoqchimisiz ?");
-        builder.setPositiveButton("Ha", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                DBHelper myDB = new DBHelper(Update_Activity.this);
-                myDB.deleteOneRow(id);
-                finish();
-            }
+        builder.setPositiveButton("Ha", (dialog, which) -> {
+            DBHelper myDB = new DBHelper(Update_Activity.this);
+            myDB.deleteOneRow(id);
+            finish();
         });
-        builder.setNegativeButton("Yo'q", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
+        builder.setNegativeButton("Yo'q", (dialog, which) -> {
         });
         builder.create().show();
     }
