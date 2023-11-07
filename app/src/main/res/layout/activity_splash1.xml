@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@drawable/nav_menu_gradient_background"
     tools:context=".Splash.Splash1">
 
 
@@ -17,8 +17,8 @@
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="@color/primary"
-        android:textStyle="bold"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,8 +28,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
@@ -56,11 +56,6 @@
         app:layout_constraintEnd_toEndOf="@+id/appName"
         app:layout_constraintStart_toStartOf="@+id/appName"
         tools:ignore="HardcodedText,MissingConstraints" />
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
