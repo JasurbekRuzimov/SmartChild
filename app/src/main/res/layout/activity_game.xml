@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/app_name"
+        android:text="@string/puzzle_15"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold" />
