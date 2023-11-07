@@ -15,7 +15,8 @@
         android:text="15 Puzzle"
         android:textColor="@color/white"
         android:textSize="42sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/player_name"
