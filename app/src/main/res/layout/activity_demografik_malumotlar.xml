@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/primary"
+        android:background="@color/green1"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -90,6 +90,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="74dp"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -138,7 +139,6 @@
                 tools:ignore="HardcodedText" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/familiyasi"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -162,7 +162,6 @@
                 tools:ignore="HardcodedText" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <Button
             android:id="@+id/royxatgaOlish"
             android:layout_width="match_parent"
@@ -179,7 +178,6 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             tools:ignore="HardcodedText,UsingOnClickInXml" />
-
 
     </LinearLayout>
 
