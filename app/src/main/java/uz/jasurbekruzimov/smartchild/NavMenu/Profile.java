@@ -21,8 +21,7 @@ import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
 public class Profile extends AppCompatActivity {
 
     LinearLayout backHome;
-    TextView userEmail;
-    TextView userPassword;
+    TextView userEmail, userPassword;
     Button logOutButton;
 
     @SuppressLint("MissingInflatedId")
