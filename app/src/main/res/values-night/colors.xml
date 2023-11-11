@@ -6,6 +6,9 @@
     <color name="teal">#3C90F6</color>
     <color name="blue">#2196F3</color>
     <color name="black">#FF000000</color>
-    <color name="white">#ffffff</color>
+    <color name="white">#FFFFFFFF</color>
     <color name="green">#02E20B</color>
+    <color name="green1">#112D4E</color>
+    <color name="red">#F80202</color>
+    <color name="yellow">#FFA000</color>
 </resources>
