@@ -175,8 +175,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class Counter {
-        private int counter;
-        private TextView textView;
+        private final int counter;
+        private final TextView textView;
         private CountDownTimer countDownTimer;
 
         public Counter(int counter, TextView textView) {
