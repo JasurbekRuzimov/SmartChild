@@ -54,17 +54,6 @@ public class Alifbe_Activity extends AppCompatActivity {
         harfInfoDialog.show();
     }
 
-    public void CallC(View view) {
-        int harfImageResource = R.drawable.c; // Rasm resursi
-        String harfInfoText = "C dan boshlanadigan hayvon - CHUMOLI";
-
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.c);
-        mp.start();
-
-        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
-        harfInfoDialog.show();
-    }
-
     public void CallD(View view) {
         int harfImageResource = R.drawable.d; // Rasm resursi
         String harfInfoText = "D dan boshlanadigan hayvon - DINAZAVR";
@@ -319,4 +308,70 @@ public class Alifbe_Activity extends AppCompatActivity {
         harfInfoDialog.show();
     }
 
+    public void CallG2(View view) {
+        int harfImageResource = R.drawable.g2; // Rasm resursi
+        String harfInfoText = "G' dan boshlanadigan hayvon - G'oz";
+
+//        final MediaPlayer mp = MediaPlayer.create(this, R.raw.z);
+//        mp.start();
+
+        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
+        harfInfoDialog.show();
+
+    }
+
+    public void CallO2(View view) {
+        int harfImageResource = R.drawable.o2; // Rasm resursi
+        String harfInfoText = "O' dan boshlanadigan hayvon - O'rdak";
+
+//        final MediaPlayer mp = MediaPlayer.create(this, R.raw.z);
+////        mp.start();
+
+        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
+        harfInfoDialog.show();
+    }
+
+    public void CallSH(View view) {
+        int harfImageResource = R.drawable.sh; // Rasm resursi
+        String harfInfoText = "SH dan boshlanadigan hayvon - Sher";
+
+//        final MediaPlayer mp = MediaPlayer.create(this, R.raw.z);
+//        mp.start();
+
+        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
+        harfInfoDialog.show();
+    }
+
+    public void CallCH(View view) {
+        int harfImageResource = R.drawable.ch; // Rasm resursi
+        String harfInfoText = "Ch dan boshlanadigan hayvon - Chivin";
+
+//        final MediaPlayer mp = MediaPlayer.create(this, R.raw.z);
+//        mp.start();
+
+        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
+        harfInfoDialog.show();
+    }
+
+    public void CallNg(View view) {
+        int harfImageResource = R.drawable.ng; // Rasm resursi
+        String harfInfoText = "ng qatnashgan harf - Bodring ";
+
+//        final MediaPlayer mp = MediaPlayer.create(this, R.raw.z);
+//        mp.start();
+
+        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
+        harfInfoDialog.show();
+    }
+
+    public void CallTutuqBelgi(View view) {
+        int harfImageResource = R.drawable.tutuqbelgisi; // Rasm resursi
+        String harfInfoText = "Tutuq belgisi";
+
+//        final MediaPlayer mp = MediaPlayer.create(this, R.raw.z);
+//        mp.start();
+
+        HarfInfoDialog harfInfoDialog = new HarfInfoDialog(this, harfImageResource, harfInfoText);
+        harfInfoDialog.show();
+    }
 }
