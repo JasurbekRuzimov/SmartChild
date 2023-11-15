@@ -1,20 +1,21 @@
 package uz.jasurbekruzimov.smartchild.Game;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import uz.jasurbekruzimov.smartchild.Dashboard.Alifbe_Activity;
 import uz.jasurbekruzimov.smartchild.R;
+import uz.jasurbekruzimov.smartchild.ShapesGame.PlayingGame;
 
 
-public class HarfInfoDialog extends Dialog {
+public class  HarfInfoDialog extends Dialog {
 
     private final int harfImageResource;
     private final String harfInfoText;
 
-    public HarfInfoDialog(Context context, int harfImageResource, String harfInfoText) {
+    public HarfInfoDialog(Alifbe_Activity context, int harfImageResource, String harfInfoText) {
         super(context);
         this.harfImageResource = harfImageResource;
         this.harfInfoText = harfInfoText;
