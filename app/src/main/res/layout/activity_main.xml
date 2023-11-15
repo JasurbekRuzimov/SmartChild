@@ -41,7 +41,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/profile"
                 app:layout_constraintTop_toTopOf="@+id/profile"
                 tools:ignore="HardcodedText,UnusedAttribute" />
-
+,,,
             <ImageView
                 android:id="@+id/imagemenu"
                 android:layout_width="wrap_content"
