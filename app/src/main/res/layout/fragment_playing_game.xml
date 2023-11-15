@@ -29,18 +29,37 @@
 
         <Button
             android:id="@+id/btnNext"
-            style="?attr/materialButtonOutlinedStyle"
+            style="@style/Widget.MaterialComponents.Button.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
+            android:layout_marginEnd="40dp"
             android:layout_weight="1"
             android:background="@drawable/button_shape"
             android:text="@string/next"
             app:icon="@drawable/ic_next"
             app:iconGravity="end"
             app:layout_constraintBottom_toBottomOf="@+id/tvAnswer"
+            app:layout_constraintEnd_toStartOf="@+id/btnBackGame"
+            app:layout_constraintTop_toTopOf="@+id/tvAnswer"
+            app:layout_constraintVertical_bias="0.545"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnBackGame"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:text="@string/OrqagaQaytish"
+            app:icon="@drawable/baseline_restore_24"
+            app:iconGravity="end"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAnswer"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvAnswer" />
+            app:layout_constraintTop_toTopOf="@+id/tvAnswer"
+            tools:ignore="MissingConstraints" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
