@@ -34,12 +34,15 @@ public class BeginGame extends Fragment {
 
     private FragmentBeginGameBinding binding;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentBeginGameBinding.inflate(inflater, container, false);
 
         startPulseAnimation(binding.btnStart);
+        startPulseAnimation(binding.btNBack);
+
 
         // add animation to navOptions object
         NavOptions navOptions = new NavOptions.Builder()
@@ -49,13 +52,17 @@ public class BeginGame extends Fragment {
                 .setPopExitAnim(R.anim.pop_exit)
                 .build();
 
+
         binding.btnStart.setOnClickListener(v -> {
             // go another fragment
             Navigation.findNavController(container).navigate(R.id.playingGame, null, navOptions);
         });
-
+        binding.btNBack.setOnClickListener(v -> {
+            Navigation.findNavController(container).navigate(R.id.mainActivity, null, navOptions);
+        });
         return binding.getRoot();
     }
+
 
     private void startPulseAnimation(Button button) {
         ObjectAnimator pulseAnimator = ObjectAnimator.ofPropertyValuesHolder(button,
