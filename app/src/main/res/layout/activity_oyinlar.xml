@@ -86,7 +86,7 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/abcblock"
+        android:src="@drawable/colour"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         tools:ignore="ContentDescription" />
