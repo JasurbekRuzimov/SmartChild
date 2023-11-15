@@ -37,7 +37,7 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="next">Keyingi</string>
     <string name="previous">Previous</string>
 
     <string name="lorem_ipsum">
@@ -106,4 +106,6 @@
     <string name="puzzle_15">Puzzle 15</string>
     <string name="ertak_nomi">Ertak nomi ...</string>
     <string name="jonivorlarning_sarguzashtlari">Jonivorlarning sarguzashtlari</string>
+    <string name="Boshlash">BOSHLASH</string>
+    <string name="OrqagaQaytish">Orqaga</string>
 </resources>
