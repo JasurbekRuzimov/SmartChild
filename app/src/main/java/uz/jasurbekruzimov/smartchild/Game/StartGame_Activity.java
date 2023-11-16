@@ -1,5 +1,6 @@
 package uz.jasurbekruzimov.smartchild.Game;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -120,6 +121,7 @@ public class StartGame_Activity extends AppCompatActivity {
             // In our case, onTick() callback method is fired on regular intervals of
             // 1000 milliseconds or 1 second and onFinish() callback method is fired
             // when the timer finishes.
+            @SuppressLint("SetTextI18n")
             @Override
             public void onTick(long millisUntilFinished) {
                 // Update tvTimer every 1 second to show the number of seconds remaining.
@@ -165,7 +167,7 @@ public class StartGame_Activity extends AppCompatActivity {
         ArrayList<String> techListTemp = (ArrayList<String>) techList.clone();
         // Get the correct answer for the current question from techList using index.
         String correctAnswer = techList.get(index);
-        // You need to find three non-repeated incorrect answers randomly.
+        // You need to find three non-repeated incorrect answers ran domly.
         // So, delete the correct answer from techListTemp.
         // Shuffle it and get first three elements from it.
         techListTemp.remove(correctAnswer);
