@@ -20,6 +20,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+import uz.jasurbekruzimov.smartchild.ColorGame.SetsActivity;
 import uz.jasurbekruzimov.smartchild.Game.Oyinlar_Activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.AboutUs_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.FAQ_activity;
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ranglar.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Oyinlar_Activity.class);
+            Intent intent = new Intent(MainActivity.this, SetsActivity.class);
             startActivity(intent);
         });
 
