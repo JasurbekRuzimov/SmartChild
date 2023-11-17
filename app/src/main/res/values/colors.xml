@@ -11,4 +11,10 @@
     <color name="green1">#029907</color>
     <color name="red">#F80202</color>
     <color name="yellow">#FFA000</color>
+
+    <color name="backg">#6a5be2</color>
+    <color name="category">#e8e4fa</color>
+    <color name="click">#ff8fa3</color>
+
+
 </resources>
