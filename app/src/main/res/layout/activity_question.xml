@@ -102,23 +102,39 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option4"
+            android:id="@+id/option1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/btn_opt"
             android:fontFamily="@font/montserrat"
-            android:text="Variant 4"
+            android:text="Variant 1"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/option3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_opt"
+            android:fontFamily="@font/montserrat"
+            android:text="Variant 2"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option1"
             tools:ignore="HardcodedText,MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -141,40 +157,25 @@
             tools:ignore="HardcodedText,MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/btn_opt"
-            android:fontFamily="@font/montserrat"
-            android:text="Variant 2"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/option1"
-            tools:ignore="HardcodedText,MissingConstraints" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option1"
+            android:id="@+id/option4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/btn_opt"
             android:fontFamily="@font/montserrat"
-            android:text="Variant 1"
+            android:text="Variant 4"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option3"
             tools:ignore="HardcodedText,MissingConstraints" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatButton
