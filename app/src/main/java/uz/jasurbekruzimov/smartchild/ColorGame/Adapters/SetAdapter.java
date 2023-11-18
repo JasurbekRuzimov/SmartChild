@@ -54,12 +54,9 @@ public class SetAdapter extends RecyclerView.Adapter<SetAdapter.viewHolder> {
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-
         ItemSetBinding binding;
-
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-
             binding = ItemSetBinding.bind(itemView);
         }
     }
