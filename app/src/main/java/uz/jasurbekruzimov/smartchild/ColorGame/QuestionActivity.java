@@ -18,6 +18,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import uz.jasurbekruzimov.smartchild.ColorGame.Models.QuestionModels;
 import uz.jasurbekruzimov.smartchild.R;
@@ -39,11 +40,14 @@ public class QuestionActivity extends AppCompatActivity {
         binding = ActivityQuestionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        Objects.requireNonNull(getSupportActionBar()).hide();
         String setName = getIntent().getStringExtra("Bo'limlar ro'yxati");
 
-        if (setName.equals("1-bosqich")) {
+
+        assert setName != null;
+        if (setName.equals("1 - bosqich")) {
             setOne();
-        } else if (setName.equals("2-bosqich")) {
+        } else if (setName.equals("2 - bosqich")) {
             setTwo();
         }
 
@@ -144,7 +148,7 @@ public class QuestionActivity extends AppCompatActivity {
         } else {
             selectedOpinion.setBackgroundColor(R.drawable.wrong_answ);
 
-            Button correctOpinion = (Button) binding.optionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
+            Button correctOption = (Button) binding.optionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
         }
 
     }
