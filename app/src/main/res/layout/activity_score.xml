@@ -6,4 +6,190 @@
     android:layout_height="match_parent"
     tools:context=".ColorGame.ScoreActivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarScore">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backg">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                app:srcCompat="@drawable/all"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:srcCompat="@drawable/check"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                app:srcCompat="@drawable/cross"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/congratulation"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/totalQuestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/rightAnsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/imageView10"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/wrongAnsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/imageView11"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/btn_share"
+                android:drawableLeft="@drawable/baseline_restore_24"
+                android:drawableTint="@color/white"
+                android:padding="10dp"
+                android:text="  Qaytadan  "
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/wrong_answ"
+                android:drawableEnd="@drawable/ic_next"
+                android:drawableTint="@color/white"
+                android:text="  Chiqish "
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_retry"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_retry"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarScore"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/green1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/back_Home"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:rotation="180"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarScore"
+        app:srcCompat="@drawable/ic_next"
+        tools:ignore="ContentDescription,UseAppTint" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/natijalar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back_Home"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_Home" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
