@@ -6,10 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -40,9 +42,11 @@ public class QuestionActivity extends AppCompatActivity {
         binding = ActivityQuestionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Objects.requireNonNull(getSupportActionBar()).hide();
         String setName = getIntent().getStringExtra("Bo'limlar ro'yxati");
 
+
+        resetTimer();
+        timer.start();
 
         assert setName != null;
         if (setName.equals("1 - bosqich")) {
@@ -58,6 +62,12 @@ public class QuestionActivity extends AppCompatActivity {
 
 
         binding.btnNext.setOnClickListener(v -> {
+
+            if (timer != null){
+                timer.cancel();
+            }
+            assert timer != null;
+            timer.start();
             binding.btnNext.setEnabled(false);
             binding.btnNext.setAlpha((float) 0.3);
             enabledOption(true);
@@ -74,6 +84,32 @@ public class QuestionActivity extends AppCompatActivity {
             count = 0;
             playAnimation(binding.question, 0, String.valueOf(list.get(position).getQuestion()));
         });
+    }
+
+    private void resetTimer() {
+        timer = new CountDownTimer(30000,10) {
+            @Override
+            public void onTick(long l) {
+
+                binding.timer.setText(String.valueOf(l/1000));
+            }
+
+            @Override
+            public void onFinish() {
+                Dialog dialog = new Dialog(QuestionActivity.this);
+                dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+                dialog.setCancelable(false);
+                dialog.setContentView(R.layout.timeout_dialog);
+                dialog.findViewById(R.id.tryAgain).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(QuestionActivity.this, SetsActivity.class);
+                        startActivity(intent);
+                    }
+                });
+                dialog.show();
+            }
+        };
     }
 
     private void playAnimation(View view, int value, String data) {
@@ -139,6 +175,11 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     private void checkAnswer(Button selectedOpinion) {
+
+        if(timer != null){
+            timer.cancel();
+        }
+
         binding.btnNext.setEnabled(true);
         binding.btnNext.setAlpha(1);
 
