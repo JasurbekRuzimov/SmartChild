@@ -34,7 +34,6 @@ public class PlayingGame extends Fragment {
     public PlayingGame() {
         // Required empty public constructor
     }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentPlayingGameBinding.inflate(inflater, container, false);
@@ -57,6 +56,7 @@ public class PlayingGame extends Fragment {
 
         binding.btnBackGame.setOnClickListener(v -> {
             Navigation.findNavController(container).navigate(R.id.beginGame, null, navOptions);
+            requireActivity().finish();
         });
 
         shapes.add(binding.ivShape1);
