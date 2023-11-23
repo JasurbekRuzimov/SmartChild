@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import uz.jasurbekruzimov.smartchild.R;
@@ -11,7 +12,7 @@ import uz.jasurbekruzimov.smartchild.R;
 
 public class Tasviriy_Sanat_Activity extends AppCompatActivity {
 
-    LinearLayout backHome;
+    ImageView backHome;
 
     @SuppressLint("MissingInflatedId")
     @Override
