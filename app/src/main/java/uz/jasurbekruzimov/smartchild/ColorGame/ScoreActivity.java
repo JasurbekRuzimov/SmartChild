@@ -12,15 +12,12 @@ import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.databinding.ActivityScoreBinding;
 
 public class ScoreActivity extends AppCompatActivity {
-
     ActivityScoreBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         binding = ActivityScoreBinding.inflate(getLayoutInflater()) ;
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
-
-
 
         int totalScore = getIntent().getIntExtra("Umumiy", 0);
         int correctAnsw = getIntent().getIntExtra("Natija", 0);
@@ -31,21 +28,12 @@ public class ScoreActivity extends AppCompatActivity {
         binding.rightAnsw.setText(String.valueOf(correctAnsw));
         binding.wrongAnsw.setText(String.valueOf(wrong));
 
-        binding.btnRetry.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ScoreActivity.this, SetsActivity.class);
-                startActivity(intent);
-            }
+        binding.btnRetry.setOnClickListener(v -> {
+            Intent intent = new Intent(ScoreActivity.this, SetsActivity.class);
+            startActivity(intent);
         });
 
-        binding.btnQuit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-
+        binding.btnQuit.setOnClickListener(v -> finish());
+        binding.backHome.setOnClickListener(v -> finish());
     }
 }
