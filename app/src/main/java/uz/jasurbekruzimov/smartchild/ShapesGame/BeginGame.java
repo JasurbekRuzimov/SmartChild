@@ -23,17 +23,14 @@ import uz.jasurbekruzimov.smartchild.databinding.FragmentBeginGameBinding;
 public class BeginGame extends Fragment {
 
     public BeginGame() {
-
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     private FragmentBeginGameBinding binding;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -43,8 +40,6 @@ public class BeginGame extends Fragment {
         startPulseAnimation(binding.btnStart);
         startPulseAnimation(binding.btNBack);
 
-
-        // add animation to navOptions object
         NavOptions navOptions = new NavOptions.Builder()
                 .setEnterAnim(R.anim.enter)
                 .setExitAnim(R.anim.exit)
@@ -52,13 +47,12 @@ public class BeginGame extends Fragment {
                 .setPopExitAnim(R.anim.pop_exit)
                 .build();
 
-
         binding.btnStart.setOnClickListener(v -> {
-            // go another fragment
             Navigation.findNavController(container).navigate(R.id.playingGame, null, navOptions);
         });
         binding.btNBack.setOnClickListener(v -> {
             Navigation.findNavController(container).navigate(R.id.mainActivity, null, navOptions);
+            requireActivity().finish();
         });
         return binding.getRoot();
     }
