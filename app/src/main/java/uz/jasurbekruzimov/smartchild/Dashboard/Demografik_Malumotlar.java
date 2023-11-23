@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -26,7 +27,7 @@ import uz.jasurbekruzimov.smartchild.R;
 
 
 public class Demografik_Malumotlar extends AppCompatActivity {
-    LinearLayout backHome;
+    ImageView backHome;
     Button addbaby;
     TextInputLayout Ismi;
     TextInputLayout Familiyasi;
