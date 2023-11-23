@@ -15,7 +15,6 @@ import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.databinding.ActivitySetsBinding;
 
 public class SetsActivity extends AppCompatActivity {
-
     ActivitySetsBinding binding;
     ArrayList<SetsModels> list;
 
@@ -51,8 +50,10 @@ public class SetsActivity extends AppCompatActivity {
         list.add(new SetsModels("19 - bosqich"));
         list.add(new SetsModels("20 - bosqich"));
 
-        SetAdapter adapter = new SetAdapter(this,list);
+        SetAdapter adapter = new SetAdapter(this, list);
         binding.setsRecy.setAdapter(adapter);
+
+        binding.backColorGame.setOnClickListener(v -> finish());
 
     }
 }
