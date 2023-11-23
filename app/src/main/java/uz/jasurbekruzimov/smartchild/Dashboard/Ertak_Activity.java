@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import uz.jasurbekruzimov.smartchild.R;
 
 public class Ertak_Activity extends AppCompatActivity {
 
-    LinearLayout backHome;
+    ImageView backHome;
     CardView ertak1, ertak2;
     TextView playingNameId;
 
