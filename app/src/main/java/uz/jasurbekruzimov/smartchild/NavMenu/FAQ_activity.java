@@ -5,13 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import uz.jasurbekruzimov.smartchild.R;
 
 
 public class FAQ_activity extends AppCompatActivity {
-LinearLayout backHome;
+    ImageView backHome;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -19,12 +20,10 @@ LinearLayout backHome;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq);
 
-        backHome=findViewById(R.id.backHome);
+        backHome = findViewById(R.id.backHome);
         backHome.setOnClickListener(v -> {
             finish();
         });
-
-
 
 
     }
