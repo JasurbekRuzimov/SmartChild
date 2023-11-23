@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -27,7 +28,7 @@ import uz.jasurbekruzimov.smartchild.R;
 
 public class Update_Activity extends AppCompatActivity {
 
-    LinearLayout backHome;
+    ImageView backHome;
     Button addbaby, delete_button;
     TextInputLayout Ismi;
     TextInputLayout Familiyasi;
