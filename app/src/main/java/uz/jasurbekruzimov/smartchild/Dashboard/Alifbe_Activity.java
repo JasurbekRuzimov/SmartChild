@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import uz.jasurbekruzimov.smartchild.Game.HarfInfoDialog;
@@ -13,7 +14,7 @@ import uz.jasurbekruzimov.smartchild.R;
 
 public class Alifbe_Activity extends AppCompatActivity {
 
-    LinearLayout backHome;
+    ImageView backHome;
 
     @SuppressLint("MissingInflatedId")
     @Override
