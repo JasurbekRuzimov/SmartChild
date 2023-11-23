@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
 
 public class Profile extends AppCompatActivity {
 
-    LinearLayout backHome;
+    ImageView backHome;
     TextView userEmail, userPassword;
     Button logOutButton;
 
