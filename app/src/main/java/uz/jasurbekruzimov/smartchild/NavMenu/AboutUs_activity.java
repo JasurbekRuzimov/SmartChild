@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -13,7 +14,7 @@ import uz.jasurbekruzimov.smartchild.R;
 
 
 public class AboutUs_activity extends AppCompatActivity {
-    LinearLayout backHome;
+    ImageView backHome;
     LinearLayout gitHub;
     LinearLayout telegram;
     LinearLayout instagram;
