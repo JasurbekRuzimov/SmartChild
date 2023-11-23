@@ -1,7 +1,6 @@
 package uz.jasurbekruzimov.smartchild.ColorGame;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.OpenForTesting;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
@@ -14,11 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -27,15 +22,12 @@ import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.databinding.ActivityQuestionBinding;
 
 public class QuestionActivity extends AppCompatActivity {
-
     ArrayList<QuestionModels> list = new ArrayList<>();
     private int count = 0;
     private int position = 0;
     private int score = 0;
     CountDownTimer timer;
-
     ActivityQuestionBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,15 +36,15 @@ public class QuestionActivity extends AppCompatActivity {
 
         String setName = getIntent().getStringExtra("Bo'limlar ro'yxati");
 
-
-        resetTimer();
-        timer.start();
-
         assert setName != null;
         if (setName.equals("1 - bosqich")) {
             setOne();
+            resetTimer();
+            timer.start();
         } else if (setName.equals("2 - bosqich")) {
             setTwo();
+            resetTimer();
+            timer.start();
         }
 
         for (int i = 0; i < 4; i++) {
@@ -60,14 +52,10 @@ public class QuestionActivity extends AppCompatActivity {
         }
         playAnimation(binding.question, 0, String.valueOf(list.get(position).getQuestion()));
 
-
         binding.btnNext.setOnClickListener(v -> {
-
-            if (timer != null){
+            if (timer != null) {
                 timer.cancel();
             }
-            assert timer != null;
-            timer.start();
             binding.btnNext.setEnabled(false);
             binding.btnNext.setAlpha((float) 0.3);
             enabledOption(true);
@@ -87,25 +75,22 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     private void resetTimer() {
-        timer = new CountDownTimer(30000,10) {
+        timer = new CountDownTimer(10000, 10) {
             @Override
             public void onTick(long l) {
-
-                binding.timer.setText(String.valueOf(l/1000));
+                binding.timer.setText(String.valueOf(l / 1000));
             }
-
             @Override
             public void onFinish() {
                 Dialog dialog = new Dialog(QuestionActivity.this);
-                dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
+                Objects.requireNonNull(dialog.getWindow()).addFlags(WindowManager.LayoutParams.FLAG_BLUR_BEHIND);
                 dialog.setCancelable(false);
                 dialog.setContentView(R.layout.timeout_dialog);
-                dialog.findViewById(R.id.tryAgain).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(QuestionActivity.this, SetsActivity.class);
-                        startActivity(intent);
-                    }
+
+                dialog.findViewById(R.id.tryAgain).setOnClickListener(v -> {
+                    Intent intent = new Intent(QuestionActivity.this, SetsActivity.class);
+                    startActivity(intent);
+                    finish();
                 });
                 dialog.show();
             }
@@ -161,7 +146,6 @@ public class QuestionActivity extends AppCompatActivity {
 
                     }
                 });
-
     }
 
     private void enabledOption(boolean enable) {
@@ -174,45 +158,44 @@ public class QuestionActivity extends AppCompatActivity {
 
     }
 
-    private void checkAnswer(Button selectedOpinion) {
-
-        if(timer != null){
+    private void checkAnswer(View selectedOpinion) {
+        if (timer != null) {
             timer.cancel();
         }
 
         binding.btnNext.setEnabled(true);
         binding.btnNext.setAlpha(1);
+        enabledOption(false);
 
-        if (selectedOpinion.getText().toString().equals(list.get(position).getCorrectAnswer())) {
+        if (selectedOpinion.getTag().equals(list.get(position).getCorrectAnswer())) {
             score++;
-            selectedOpinion.setBackgroundColor(R.drawable.correct_answ);
+            selectedOpinion.setBackgroundResource(R.drawable.correct_answ);
         } else {
-            selectedOpinion.setBackgroundColor(R.drawable.wrong_answ);
+            selectedOpinion.setBackgroundResource(R.drawable.wrong_answ);
 
-            Button correctOption = (Button) binding.optionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
+            View correctOptionView = binding.optionContainer.findViewWithTag(list.get(position).getCorrectAnswer());
+            if (correctOptionView != null) {
+                correctOptionView.setBackgroundResource(R.drawable.correct_answ);
+            }
         }
-
     }
 
     private void setTwo() {
         list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-
+        list.add(new QuestionModels("Savol-2", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-3", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-4", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-5", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-6", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
     }
 
     private void setOne() {
-        list.add(new QuestionModels("Savol-2", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-2", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-2", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-2", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
         list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-        list.add(new QuestionModels("Savol-1", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
-
+        list.add(new QuestionModels("Savol-2", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-3", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-4", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-5", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
+        list.add(new QuestionModels("Savol-6", "Qora", "Oq", "Jigarrang", "Yashil", "Jigarrang"));
     }
-
 
 }
