@@ -32,50 +32,27 @@
             android:fontFamily="@font/montserrat"
             android:text="Bolalar ro'yxati"
             android:textColor="@color/white"
-            android:textSize="26sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/delete_all_data"
             app:layout_constraintStart_toEndOf="@+id/backHome"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText,MissingConstraints" />
 
-        <LinearLayout
+        <ImageView
             android:id="@+id/backHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:rotation="180"
+            android:src="@drawable/ic_next"
+            android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            android:clickable="true"
-            android:contextClickable="true"
-            android:longClickable="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            android:focusable="true"
-            tools:targetApi="m">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="22dp"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:src="@drawable/previous"
-                android:tint="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ContentDescription,UseAppTint" />
-
-        </LinearLayout>
+            tools:ignore="ContentDescription,UseAppTint" />
 
         <ImageView
             android:id="@+id/delete_all_data"

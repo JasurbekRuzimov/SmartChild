@@ -40,12 +40,11 @@ import uz.jasurbekruzimov.smartchild.R;
 
 
 public class Natijalar_Activity extends AppCompatActivity {
-    LinearLayout backHome;
     DBHelper dbHelper;
     ArrayList<String> user_id, ismi, familiyasi;
     RecyclerView recyclerView;
     CustomAdapter customAdapter;
-    ImageView delete_all_data, empty;
+    ImageView delete_all_data, empty, backHome;
     TextView empty_text;
     FloatingActionButton floatingActionButton;
     int coun=0;
@@ -57,12 +56,11 @@ public class Natijalar_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_natijalar);
 
-
         empty = findViewById(R.id.empty);
         empty_text = findViewById(R.id.empty_text);
         floatingActionButton = findViewById(R.id.floatingActionButton);
-
         delete_all_data = findViewById(R.id.delete_all_data);
+
         delete_all_data.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(Natijalar_Activity.this);
             builder.setTitle("Barcha ma'lumotlarni o'chirishni xohlaysizmi?");
@@ -95,9 +93,7 @@ public class Natijalar_Activity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(Natijalar_Activity.this));
-
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
