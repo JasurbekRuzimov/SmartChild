@@ -25,24 +25,6 @@
             android:name=".ColorGame.SetsActivity"
             android:exported="false" />
         <activity
-            android:name=".Puzzle.ResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Puzzle.RatingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Puzzle.SettingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Puzzle.InstructionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Puzzle.MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Puzzle.GameActivity"
-            android:exported="false" />
-        <activity
             android:name=".ShapesGame.Shapes"
             android:exported="false"
             android:screenOrientation="landscape" />
@@ -62,22 +44,7 @@
             android:name=".NavMenu.Profile"
             android:exported="false" />
         <activity
-            android:name=".Game.GameOver"
-            android:exported="false" />
-        <activity
-            android:name=".Game.StartGame_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Game.Oyinlar_Activity"
-            android:exported="false" />
-        <activity
             android:name=".Dashboard.Tasviriy_Sanat_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Dashboard.Ingliz_Tili_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Dashboard.Alifbe_Activity"
             android:exported="false" />
         <activity
             android:name=".Dashboard.Ertak_Activity"
@@ -104,13 +71,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".DataBase.Update_Activity"
-            android:parentActivityName=".Dashboard.Natijalar_Activity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".NavMenu.FAQ_activity"
             android:exported="false">
             <meta-data
@@ -126,20 +86,6 @@
         </activity>
         <activity
             android:name=".NavMenu.Settings_activity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Dashboard.Natijalar_Activity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Dashboard.Demografik_Malumotlar"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
