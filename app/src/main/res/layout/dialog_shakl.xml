@@ -22,7 +22,7 @@
             android:layout_height="100dp"
             android:padding="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/mysql"
+            android:src="@drawable/all"
             tools:ignore="ContentDescription" />
 
         <TextView
