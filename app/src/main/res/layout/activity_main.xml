@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/images1"
+        android:background="@drawable/wallpaper"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -41,7 +41,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/profile"
                 app:layout_constraintTop_toTopOf="@+id/profile"
                 tools:ignore="HardcodedText,UnusedAttribute" />
-,,,
+
             <ImageView
                 android:id="@+id/imagemenu"
                 android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="74dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/images1"
+            android:background="@drawable/wallpaper"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -91,21 +91,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:orientation="vertical"
                 tools:ignore="ScrollViewSize">
 
-
                 <LinearLayout
-                    android:id="@+id/linearLayout_usti"
+                    android:id="@+id/linearLayout_usti1"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="1dp"
                     android:gravity="center"
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
                     tools:ignore="MissingConstraints">
 
                     <androidx.cardview.widget.CardView
@@ -113,46 +113,7 @@
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="5dp"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:id="@+id/Alifbe"
-                            android:layout_width="150dp"
-                            android:layout_height="160dp"
-                            android:orientation="vertical"
-                            android:padding="15dp"
-                            tools:ignore="MissingPrefix">
-
-
-                            <ImageView
-                                android:layout_width="130dp"
-                                android:layout_height="110dp"
-                                android:layout_gravity="center"
-                                android:layout_weight="0.8"
-                                android:src="@drawable/abcblock"
-                                tools:ignore="ContentDescription,InefficientWeight" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:fontFamily="@font/montserrat"
-                                android:text="Alifbe"
-                                android:textColor="@color/primary"
-                                android:textSize="13sp"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText" />
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
+                        android:layout_gravity="center"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
@@ -164,7 +125,7 @@
 
 
                             <ImageView
-                                android:layout_width="130dp"
+                                android:layout_width="100dp"
                                 android:layout_height="110dp"
                                 android:layout_gravity="center"
                                 android:layout_weight="0.8"
@@ -187,21 +148,6 @@
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayout_usti1"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="1dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
-                    tools:ignore="MissingConstraints">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
@@ -243,45 +189,6 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:id="@+id/InglizTili"
-                            android:layout_width="150dp"
-                            android:layout_height="160dp"
-                            android:orientation="vertical"
-                            android:padding="15dp">
-
-
-                            <ImageView
-                                android:layout_width="130dp"
-                                android:layout_height="110dp"
-                                android:layout_gravity="center"
-                                android:layout_weight="0.8"
-                                android:src="@drawable/puzzle_15"
-                                tools:ignore="ContentDescription,InefficientWeight" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:fontFamily="@font/montserrat"
-                                android:gravity="center"
-                                android:text="Puzzle 15"
-                                android:textColor="@color/primary"
-                                android:textSize="13sp"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText" />
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -377,91 +284,8 @@
 
                     </androidx.cardview.widget.CardView>
 
+
                 </LinearLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="5dp"
-                    app:cardUseCompatPadding="true">
-
-                    <LinearLayout
-                        android:id="@+id/umumiyBolalarSoni"
-                        android:layout_width="320dp"
-                        android:layout_height="100dp"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        tools:ignore="DuplicateIds,MissingConstraints">
-
-                        <LinearLayout
-                            android:id="@+id/Chaqaloqlar333"
-                            android:layout_width="130dp"
-                            android:layout_height="90dp"
-                            android:layout_margin="5dp"
-                            android:background="@color/white"
-                            android:orientation="vertical"
-                            android:padding="15dp"
-                            android:weightSum="1">
-
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="0.8"
-                                android:src="@drawable/pupil"
-                                tools:ignore="ContentDescription,InefficientWeight" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/Chaqaloqlar334"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:layout_marginStart="45dp"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:padding="10dp"
-                            android:weightSum="1">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:layout_weight="0.1"
-                                android:fontFamily="@font/montserrat"
-                                android:text=" Umumiy "
-                                android:textColor="@color/primary"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText,InefficientWeight" />
-
-                            <TextView
-                                android:id="@+id/BolalarSoni"
-                                android:layout_width="wrap_content"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/montserrat"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text=" 0 "
-                                android:textAlignment="center"
-                                android:textColor="@color/primary"
-                                android:textSize="30sp"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText,InefficientWeight,TextViewEdits,UsingOnClickInXml" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
 
             </LinearLayout>
 
