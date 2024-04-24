@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/nav_menu_gradient_background"
+    android:background="@color/white"
     tools:context=".Splash.Splash1">
 
 

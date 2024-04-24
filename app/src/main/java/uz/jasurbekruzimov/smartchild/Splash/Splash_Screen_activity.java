@@ -28,19 +28,8 @@ public class Splash_Screen_activity extends AppCompatActivity {
         } else {
             startActivity(new Intent(Splash_Screen_activity.this, SignIn_Firebase_Activity.class));
         }
-
         finish();
-
-
-
-//        new Handler().postDelayed(() -> {
-//            startActivity(new Intent(Splash_Screen_activity.this, SignIn_Firebase_Activity.class));
-//            finish();
-//        }, 2000);
-
     }
-
-
 
     private boolean isUserLoggedIn() {
         // SharedPreferences dan foydalanuvchi kirish holatini o'qish
