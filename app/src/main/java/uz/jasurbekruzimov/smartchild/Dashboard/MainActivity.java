@@ -16,29 +16,24 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import uz.jasurbekruzimov.smartchild.ColorGame.SetsActivity;
-import uz.jasurbekruzimov.smartchild.Game.Oyinlar_Activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.AboutUs_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.FAQ_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.Profile;
 import uz.jasurbekruzimov.smartchild.NavMenu.Settings_activity;
 import uz.jasurbekruzimov.smartchild.NavMenu.Support_Activity;
-import uz.jasurbekruzimov.smartchild.Puzzle.MenuActivity;
-import uz.jasurbekruzimov.smartchild.Puzzle.SettingsActivity;
 import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.ShapesGame.Shapes;
 import uz.jasurbekruzimov.smartchild.SignIn_Up.SignIn_Firebase_Activity;
-import uz.jasurbekruzimov.smartchild.VideoTutorials.TestVideo;
 
 
 public class MainActivity extends AppCompatActivity {
     ImageView navMenu, profile;
     TextView KinderGardenName, BolalarSoni;
-    LinearLayout ertaklar,alifbe,inglizTili,tasviriySanat,shakllar,ranglar,umumiyBolalarSoni;
+    LinearLayout ertaklar,tasviriySanat,shakllar,ranglar, videoDars;
     private boolean isMenuOpen = false;
     public boolean isBackPressed = false;
 
@@ -51,14 +46,11 @@ public class MainActivity extends AppCompatActivity {
         KinderGardenName = findViewById(R.id.appName);
 
         ertaklar = findViewById(R.id.Ertaklar);
-        alifbe = findViewById(R.id.Alifbe);
-        inglizTili = findViewById(R.id.InglizTili);
         tasviriySanat = findViewById(R.id.TasviriySanat);
         ranglar = findViewById(R.id.ranglar);
         shakllar = findViewById(R.id.shakllar);
-        umumiyBolalarSoni = findViewById(R.id.umumiyBolalarSoni);
-        BolalarSoni = findViewById(R.id.BolalarSoni);
         profile = findViewById(R.id.profile);
+        videoDars = findViewById(R.id.videoDars);
 
         DrawerLayout drawerLayout = findViewById(R.id.drawerLayout);
         navMenu = findViewById(R.id.imagemenu);
@@ -122,16 +114,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        alifbe.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Alifbe_Activity.class);
-            startActivity(intent);
-        });
-
-        inglizTili.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-            startActivity(intent);
-        });
-
         tasviriySanat.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Tasviriy_Sanat_Activity.class);
             startActivity(intent);
@@ -147,8 +129,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        umumiyBolalarSoni.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Natijalar_Activity.class);
+        videoDars.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, VideoDars.class);
             startActivity(intent);
         });
 

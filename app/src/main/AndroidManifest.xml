@@ -16,6 +16,9 @@
         android:theme="@style/Theme.SmartChild"
         tools:targetApi="31">
         <activity
+            android:name=".Dashboard.VideoDars"
+            android:exported="false" />
+        <activity
             android:name=".ColorGame.ScoreActivity"
             android:exported="false" />
         <activity

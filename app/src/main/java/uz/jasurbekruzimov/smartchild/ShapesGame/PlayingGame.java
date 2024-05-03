@@ -20,8 +20,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-import uz.jasurbekruzimov.smartchild.Dashboard.Alifbe_Activity;
-import uz.jasurbekruzimov.smartchild.Game.HarfInfoDialog;
 import uz.jasurbekruzimov.smartchild.R;
 import uz.jasurbekruzimov.smartchild.databinding.FragmentPlayingGameBinding;
 

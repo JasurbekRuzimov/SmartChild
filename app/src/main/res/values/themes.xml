@@ -2,7 +2,7 @@
     <style name="Theme.SmartChild" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@color/green1</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
   <!-- Base application theme. -->
     <style name="Base.Theme.SmartChild" parent="Theme.AppCompat.Light.NoActionBar">
